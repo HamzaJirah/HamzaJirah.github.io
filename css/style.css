@@ -1,0 +1,31 @@
+.container {
+  display: grid;
+  grid-template-areas: 
+    "brand menu"
+    "content content"
+}
+
+header {
+  grid-area: brand;
+}
+
+nav {
+  grid-area: menu;
+}
+
+nav ul {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(2, 50px);
+  justify-content: right;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+main {
+  grid-area: content;
+  justify-content: center;
+}
+
